@@ -1,6 +1,7 @@
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 const recognition = new SpeechRecognition()
+
 const guessElement = document.querySelector('#guess')
 
 if (localStorage.getItem('portuguese')){
@@ -22,8 +23,11 @@ function onSpeak(evento){
 
 
 function showGuess(guess){
-    guessElement.innerHTML =`
+    guessElement.innerHTML = (recognition.lang == 'en') ? `
     <div>You said:</div>
+    <span class="box">${guess}</span>
+    ` : `
+    <div>Você disse:</div>
     <span class="box">${guess}</span>
     `
 }
