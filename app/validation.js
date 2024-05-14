@@ -36,7 +36,7 @@ function verifyGuess(guess){
         else if (number == randomNumber){
             section.innerHTML = `
             <h1>Você encontrou o número secreto!</h2>
-            <h3>O número secreto é${randomNumber}</h3>
+            <h3>O número secreto é ${randomNumber}</h3>
             <a href="" class="play-again-btn" style="text-decoration: none"><button>Jogar novamente</button></a>
             `
         }
