@@ -1,5 +1,3 @@
-const smallestValue = 1
-const biggestValue = 100
 const randomNumber = generateRandomNumber()
 
 function generateRandomNumber(){
